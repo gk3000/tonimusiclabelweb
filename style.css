@@ -1,13 +1,9 @@
 body {
   text-align: center;
-  background-image: url("https://otg.imgix.net/assets/grid/barcelona/poble-nou/ultra-local-records/LB_ONTHEGRID_0000s_0002_Retoques-copia-2.jpg?auto=format%2Ccompress&crop=focalpoint&fit=min&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-1.1.0&q=80&w=1200&s=74130115f47b881d2496284670f45076");
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: cover; 
-  background-attachment: fixed;
-  background: rgba(0,0,0,0.5);
   padding: 0;
   margin: 0;
+  color: black;
+  background-color: rgb(230, 228, 228);
 }
 
 a {
@@ -17,6 +13,12 @@ a {
 footer {
   background-color: black;
   color: white;
+  padding: 2em;
+}
+
+iframe {
+  height: 50vh;
+  width: 60vw;
 }
 
 .col3 {
@@ -37,6 +39,7 @@ footer {
 
 /* Style the heading */
 #navbar h1 {
+  display: inline-block;
   float: left;
   font-size: 18px;
   padding: 12px 0 0 20px;
@@ -57,18 +60,91 @@ footer {
   color: black;
 }
 
+.navbarPhone {
+  position: relative;
+  display: inline-block;
+  right: auto;
+}
+
+.navbarPhone-content {
+  display: none;
+  position: absolute;
+  left:0;
+  z-index:1;
+}
+
+.navbarPhone:hover .navbarPhone-content {
+  display: block;
+/* animation: popup .5s ease-in-out both; */
+}
+
+.navbarPhone span {
+  transition: transform .5s;
+-webkit-transition: -webkit-transform .5s;
+  display: block;
+  transform: rotate(90deg);
+}
+
+.navbarPhone:hover span {
+  transition: transform .5s;
+-webkit-transition: -webkit-transform .5s;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 /* for landing display */
 #landing {
   color: black;
-  background-color: rgb(236, 208, 236);
   height: 90vh;
+  background-image: url("https://otg.imgix.net/assets/grid/barcelona/poble-nou/ultra-local-records/LB_ONTHEGRID_0000s_0002_Retoques-copia-2.jpg?auto=format%2Ccompress&crop=focalpoint&fit=min&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-1.1.0&q=80&w=1200&s=74130115f47b881d2496284670f45076");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
+#landing h1 {
   margin: 0 auto;
+  padding: 0 auto;
+}
+
+.float {
+  padding: 30vh 30vw;
+}
+
+#location {
+  height: 100vh;
+}
+
+#gallery {
+  background-color: lightgray;
+}
+
+.pics {
+  padding: 0 0 2em;
+}
+
+#releases {
+  background-color: rgb(231, 231, 231);
+}
+
+#team {
+  background-color: lightgray;
+}
+
+.titles {
+  padding: 2em;
+}
+
+.bgcolor {
+  background-color: lightpink;
+  padding: 2em;
 }
 
 .col2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 1em;;
 }
 
 .col2 img {
@@ -86,6 +162,7 @@ footer {
 }
 
 /* mobile version */
+<<<<<<< HEAD
 @media all and (max-width:420px){
 
   .col3 {
@@ -93,3 +170,44 @@ footer {
 }
 
 }
+=======
+@media all and (max-width:650px) {
+  .col3 { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .navbarPhone {
+    display: block;
+  }
+  .navbarDesktop {
+    display: none;
+  }
+}
+
+@media all and (max-width:420px) {
+  .col3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .col2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 650px) {
+  .navbarPhone {
+    display: none;
+  }
+  .navbarDesktop {
+    display: block;
+  }
+}
+
+
+
+
+
+
+>>>>>>> 28d002e5080d0e2a5ac87c99c3b7687b284ca79d
