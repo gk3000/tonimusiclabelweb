@@ -1,0 +1,61 @@
+body {
+  text-align: center;
+  background-image: url("https://otg.imgix.net/assets/grid/barcelona/poble-nou/ultra-local-records/LB_ONTHEGRID_0000s_0002_Retoques-copia-2.jpg?auto=format%2Ccompress&crop=focalpoint&fit=min&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-1.1.0&q=80&w=1200&s=74130115f47b881d2496284670f45076");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed;
+  background: rgba(0,0,0,0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+
+/* for navbar */
+#navbar {
+  background-color: black;
+  overflow: hidden;
+  color: white;
+}
+
+/* Style the heading */
+#navbar h1 {
+  float: left;
+  font-size: 18px;
+  padding: 18px 0 0 20px;
+}
+
+/* Style the links */
+#navbar a {
+  float: right;
+  color: #f2f2f2;
+  padding: 30px 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* for landing display */
+#landing {
+  color: black;
+  background-color: rgb(236, 208, 236);
+  width: 500px;
+  margin: auto;
+  padding: 20px 0 30px 0;
+}
