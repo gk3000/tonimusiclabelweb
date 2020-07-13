@@ -21,6 +21,11 @@ footer {
   color: white;
 }
 
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
 
 /* for navbar */
 #navbar {
