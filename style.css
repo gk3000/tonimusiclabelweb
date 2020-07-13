@@ -6,14 +6,12 @@ body {
   background-size: cover; 
   background-attachment: fixed;
   background: rgba(0,0,0,0.5);
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  width: 200px;
 }
 
 footer {
@@ -32,20 +30,23 @@ footer {
   background-color: black;
   overflow: hidden;
   color: white;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
 }
 
 /* Style the heading */
 #navbar h1 {
   float: left;
   font-size: 18px;
-  padding: 18px 0 0 20px;
+  padding: 12px 0 0 20px;
 }
 
 /* Style the links */
 #navbar a {
   float: right;
   color: #f2f2f2;
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-decoration: none;
   font-size: 18px;
 }
@@ -60,7 +61,35 @@ footer {
 #landing {
   color: black;
   background-color: rgb(236, 208, 236);
-  width: 500px;
-  margin: auto;
-  padding: 20px 0 30px 0;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.col2 img {
+  width: 100%;
+}
+
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.col3 img {
+  width: 100%;
+}
+
+/* mobile version */
+@media all and (max-width:420px){
+
+  .col3 {
+  grid-template-columns: 1fr;
+}
+
 }
