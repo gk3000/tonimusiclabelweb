@@ -162,15 +162,6 @@ iframe {
 }
 
 /* mobile version */
-<<<<<<< HEAD
-@media all and (max-width:420px){
-
-  .col3 {
-  grid-template-columns: 1fr;
-}
-
-}
-=======
 @media all and (max-width:650px) {
   .col3 { 
     display: grid;
@@ -210,4 +201,3 @@ iframe {
 
 
 
->>>>>>> 28d002e5080d0e2a5ac87c99c3b7687b284ca79d
